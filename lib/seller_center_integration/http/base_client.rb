@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Relog
+module SellerCenterIntegration
   module Http
     class BaseClient
       #== EXCEPTIONS ===========================================

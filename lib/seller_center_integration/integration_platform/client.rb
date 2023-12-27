@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-module Relog
+module SellerCenterIntegration
   module IntegrationPlatform
-    class Client < Relog::Client
+    class Client < SellerCenterIntegration::Client
       def initialize(options = {})
         super
       end
 
-      def send_order(params)
-        @service.send_order(params)
+      def send_bag(params)
+        @service.send_bag(params)
       end
     end
   end

@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-module Relog
+module SellerCenterIntegration
   class Client
     def initialize(options = {})
       @options = options
       @service = get_service
     end
 
-    def send_order(params)
+    def send_bag(params)
       raise NotImplementedError.new, "Not Implemented Yet"
     end
 

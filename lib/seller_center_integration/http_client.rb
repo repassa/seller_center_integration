@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-module Relog
+module SellerCenterIntegration
   class HttpClient < Http::BaseClient
     attr_reader :base_url
     attr_accessor :response
 
     API_VERSION = 'v1'
-    ENDPOINT    = 'https://relog/api'
+    ENDPOINT    = 'https://seller_center_integration/api'
 
     private_constant :ENDPOINT, :API_VERSION
 
@@ -14,7 +14,7 @@ module Relog
       @base_url = "#{ENDPOINT}/#{API_VERSION}/"
     end
 
-    def send_order(params)
+    def send_bag(params)
       'Sending a order via http has not yet been implemented...'
     end
 

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "relog"
+require "seller_center_integration"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

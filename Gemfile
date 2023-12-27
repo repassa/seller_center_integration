@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in relog.gemspec
+# Specify your gem's dependencies in seller_center_integration.gemspec
 gemspec
 
 gem "rake", "~> 13.0"

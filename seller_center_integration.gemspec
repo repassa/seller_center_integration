@@ -1,22 +1,22 @@
 # frozen_string_literal: true
 
-require_relative "lib/relog/version"
+require_relative "lib/seller_center_integration/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "relog_integration"
-  spec.version = Relog::VERSION
+  spec.name = "seller_center_integration"
+  spec.version = SellerCenterIntegration::VERSION
   spec.authors = ["Emerson de Assis"]
   spec.email = ["emerson.silva@repassa.com.br"]
 
-  spec.summary = "Com essa gem seu sistema pode deste enviar pedidos para o Bling até gerar nota fiscal de serviço"
-  spec.description = "Gem responsável pela integração com os serviços do Bling"
+  spec.summary = "Com essa gem seu sistema pode deste enviar sacolas e produtos para o Seller Center para gestão de cadastro"
+  spec.description = "Gem responsável pela integração com os serviços do SellerCenter"
   spec.homepage = "https://www.repassa.com.br"
   spec.license = "MIT"
 
   spec.metadata["allowed_push_host"] = ""
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://dev.azure.com/repassa/ReNova/_git/relog_integration"
+  spec.metadata["source_code_uri"] = "https://github.com/repassa/seller_center_integration"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
