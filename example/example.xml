@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido>
+   28/07/2017
+   <cliente>
+       <nome>Organisys Software</nome>
+       <cnpj>00000000000000</cnpj>
+       <ie>3067663000</ie>
+       <endereco>Rua Visconde de São Gabriel</endereco>
+       <numero>392</numero>
+       <complemento>Sala 54</complemento>
+       <bairro>Cidade Alta</bairro>
+       <cep>95.700-000</cep>
+       <cidade>Bento Gonçalves</cidade>
+       <uf>RS</uf>
+       <fone>54 8115-3376</fone>
+       <email>teste@teste.com.br</email>
+ </cliente>
+ <servicos>
+    <servico>
+        <codigo>1.03.01</codigo>
+        <descricao>Desenvolvimento de site</descricao>
+        <valor>1678,14</valor>
+     </servico>
+  </servicos>
+  <parcelas>
+     <parcela>
+         <dias>30</dias>
+         <vlr>1678,14</vlr>
+         <obs>Parcela 1</obs>
+     </parcela>
+  </parcelas>
+</pedido>
