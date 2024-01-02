@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module SellerCenterIntegration
-  module IntegrationPlatform
+  module Core
     class Client < SellerCenterIntegration::Client
       def initialize(options = {})
         super

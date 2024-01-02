@@ -12,7 +12,7 @@ require_relative 'seller_center_integration/client'
 require_relative 'seller_center_integration/http/base_client'
 require_relative 'seller_center_integration/messaging/base_client'
 
-require_relative 'seller_center_integration/integration_platform/client'
+require_relative 'seller_center_integration/core/client'
 
 require_relative 'seller_center_integration/http_client'
 require_relative 'seller_center_integration/messaging_client'
