@@ -7,10 +7,6 @@ module SellerCenterIntegration
       @service = get_service
     end
 
-    def send_bag(params)
-      raise NotImplementedError.new, "Not Implemented Yet"
-    end
-
     private
 
     def get_service
