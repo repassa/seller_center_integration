@@ -22,7 +22,7 @@ module SellerCenterIntegration
 
       def request(http_method:, endpoint:, params: {}, headers: {})
         @response = client.public_send(http_method, endpoint, params, add_default_headers(headers))
-        return JSON.parse(@response.body) if response_successful?
+        return formatted_response(@response.body) if response_successful?
 
         raise error_class, "Code: #{@response.status}, response: #{@response.body}"
       end
@@ -63,6 +63,12 @@ module SellerCenterIntegration
 
       def transform_keys(item)
         item.transform_keys { |i| i.underscore.to_sym }
+      end
+
+      def formatted_response(body)
+        return body if body.empty? || body.blank?
+
+        JSON.parse(body)
       end
     end
   end
