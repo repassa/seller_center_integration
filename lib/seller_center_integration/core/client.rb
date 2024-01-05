@@ -7,8 +7,8 @@ module SellerCenterIntegration
         super
       end
 
-      def send_bag(params)
-        @service.send_bag(params)
+      def send_bags(params)
+        @service.send_bags(params)
       end
     end
   end

@@ -6,7 +6,7 @@ module SellerCenterIntegration
       @options = options
     end
 
-    def send_bag(params)
+    def send_bags(params)
       publish(params)
     end
   end
