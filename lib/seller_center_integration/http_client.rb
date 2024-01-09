@@ -18,5 +18,22 @@ module SellerCenterIntegration
 
       request(http_method: 'post', endpoint: endpoint, params: params.to_json, headers: headers)
     end
+
+    def update_bag_payment_status(params)
+      request(
+        http_method: 'put',
+        endpoint:    '/backoffice-integration-renova-ms/v1/bags-information/update-payment',
+        params:      params.to_json,
+        headers:     headers
+      )
+    end
+
+    private
+
+    def headers
+      {
+        'Authorization' => "Bearer #{api_key}"
+      }
+    end
   end
 end

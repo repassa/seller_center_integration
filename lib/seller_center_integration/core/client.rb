@@ -10,6 +10,10 @@ module SellerCenterIntegration
       def send_bags(params)
         @service.send_bags(params)
       end
+
+      def update_bag_payment_status(params)
+        @service.update_bag_payment_status(params)
+      end
     end
   end
 end
