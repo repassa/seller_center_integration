@@ -22,7 +22,7 @@ module SellerCenterIntegration
     def update_bag_payment_status(params)
       request(
         http_method: 'put',
-        endpoint:    '/backoffice-integration-renova-ms/v1/bags-information/update-payment',
+        endpoint:    endpoint,
         params:      params.to_json,
         headers:     headers
       )
