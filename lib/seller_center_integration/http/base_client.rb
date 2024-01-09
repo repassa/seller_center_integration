@@ -24,7 +24,7 @@ module SellerCenterIntegration
         @response = client.public_send(http_method, endpoint, params, add_default_headers(headers))
         return formatted_response(@response.body) if response_successful?
 
-        raise error_class, "Code: #{@response.status}, response: #{@response.body}"
+        raise error_class, "Code: #{@response.status}, response: #{formatted_response(@response.body)}"
       end
 
       private
@@ -66,7 +66,7 @@ module SellerCenterIntegration
       end
 
       def formatted_response(body)
-        return body if body.empty? || body.blank?
+        return body if body.empty?
 
         JSON.parse(body)
       end
