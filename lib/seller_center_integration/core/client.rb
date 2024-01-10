@@ -14,6 +14,10 @@ module SellerCenterIntegration
       def update_bag_payment_status(params)
         @service.update_bag_payment_status(params)
       end
+
+      def update_bag_reproved_status(params)
+        @service.update_bag_reproved_status(params)
+      end
     end
   end
 end

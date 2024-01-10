@@ -28,6 +28,18 @@ module SellerCenterIntegration
       )
     end
 
+    def update_bag_reproved_status(params)
+      bag_id = params[:bag_id]
+      payload = params[:payload]
+
+      request(
+        http_method: 'put',
+        endpoint:    "#{endpoint}/#{bag_id}",
+        params:      payload.to_json,
+        headers:     headers
+      )
+    end
+
     private
 
     def headers
