@@ -40,6 +40,15 @@ module SellerCenterIntegration
       )
     end
 
+    def get_product_price_by_gender(params)
+      request(
+        http_method: 'get',
+        endpoint: endpoint,
+        params: params,
+        headers: headers
+      )
+    end 
+
     private
 
     def headers

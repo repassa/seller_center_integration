@@ -18,6 +18,10 @@ module SellerCenterIntegration
       def update_bag_reproved_status(params)
         @service.update_bag_reproved_status(params)
       end
+      
+      def get_product_price_by_gender(params)
+        @service.get_product_price_by_gender(params)
+      end
     end
   end
 end
