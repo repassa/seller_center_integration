@@ -22,9 +22,5 @@ module SellerCenterIntegration
     def http_client
       HttpClient.new(@options)
     end
-
-    def get_product_price_by_gender(params)
-      @service.get_product_price_by_gender(params)
-    end
   end
 end
