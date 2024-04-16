@@ -12,10 +12,6 @@ module SellerCenterIntegration
     end
 
     def send_bags(params)
-      headers = {
-        'Ocp-Apim-Subscription-Key' => api_key
-      }
-
       request(http_method: 'post', endpoint: endpoint, params: params.to_json, headers: headers)
     end
 
@@ -53,7 +49,7 @@ module SellerCenterIntegration
 
     def headers
       {
-        'Authorization' => "Bearer #{api_key}"
+        'Ocp-Apim-Subscription-Key' => api_key
       }
     end
   end
